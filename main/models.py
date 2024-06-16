@@ -11,7 +11,6 @@ def user_directory_path(instance, filename):
     new_filename = f'{unique_id}.{ext}'
     return os.path.join('storage', str(instance.user.id), new_filename)
 
-
 class Skill(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=128)

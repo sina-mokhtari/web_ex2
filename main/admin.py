@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import  Skill, Education, EducationalRecord, WorkPlace, WorkExperience, Storage, AcademicAchievement, EditRequest
+from .models import Skill, Education, EducationalRecord, WorkPlace, WorkExperience, Storage, AcademicAchievement, EditRequest
 from users.models import myUser
 class UserAdmin(admin.ModelAdmin):
     list_display = ('id', 'fullName', 'age', 'birthDate', 'gender')  # Columns to display in the admin list view
