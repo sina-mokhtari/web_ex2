@@ -1,0 +1,132 @@
+.main {
+    display: flex;
+    width: 60%;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.profile-banner {
+    background-color: black;
+    height: 200px;
+}
+
+.profile-image-container {
+    display: flex;
+    justify-content: right;
+}
+
+.profile-image {
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.shift-top {
+    position: relative;
+    right: 20px;
+    bottom: 45px;
+}
+
+.shift-top-2 {
+    position: relative;
+    right: 20px;
+    bottom: 25px;
+}
+
+.persian {
+    direction: rtl;
+    font-family: 'Vazirmatn';
+}
+
+.text {
+    padding: 0 40px 0 40px
+}
+
+.biography {
+    font-weight: 200;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.persian-flex-center {
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 20px
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+li {
+    font-weight: 300;
+}
+
+.profile-card, .profile-banner{
+    width: 100%;
+}
+
+
+.tab {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  
+  .tab button {
+    background-color: inherit;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  
+  .tabcontent {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  .profile-bio {
+    padding-bottom: 40px;
+  }
+
+  .no-display {
+    display: none;
+  }
+
+  .display {
+    display: block;
+  }
+
+  #profile-tabs{
+    width: 100%;
+  }
+
+  #userName{
+    font-weight: 700;
+  }

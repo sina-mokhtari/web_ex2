@@ -1,0 +1,18 @@
+label {
+    margin-top: 10px;
+}
+
+.persian {
+    direction: rtl;
+}
+
+h1 {
+    font-size: 1.3rem;
+    text-align: center;;
+}
+
+.container {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px 5px 5px 10px;
+}

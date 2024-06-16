@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('../fonts/Vazirmatn-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    font-size: .75rem;
+}
+
+.header {
+    display: flex;
+    gap: 5px;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+    font-family: 'Vazirmatn';
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.separator {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+body {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.plain-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.no-display {
+    display: none;
+}
+
+#mySubmit {
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: whitesmoke;
+}

@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Site{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/cardGrid.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/home.css' %}">
+</head>
+
+<body>
+    <section class="header">
+        <a href="{% url 'home' %}">
+            <h2>خانه</h2>
+        </a>
+        <h2 class="separator">|</h2>
+        {% if user and user.is_authenticated %}
+        <a href="{% url 'profile' %}">
+            <h2>پروفایل</h2>
+        </a>
+        <span class="navbar-text">Logged in as {{user.email}} | </span>
+        <a href="editProfile.html">
+            <h2>ویرایش پروفایل</h2>
+        </a>
+       
+        <h2 class="separator">|</h2>
+        {% else %}
+
+        <h2 class="separator">|</h2>
+        <a href="{% url 'login' %}">
+            <h2>ورود/ثبت نام</h2>
+        </a>
+
+        {% endif %}
+        <h2 class="separator">|</h2>
+        
+        <a href="auth.html">
+            <h2>ادمین</h2>
+        </a>
+        <h2 class="separator">|</h2>
+        <a href="explore.html">
+            <h2>جست و جو</h2>
+        </a>
+    </section>
+
+    {% block content %} {% endblock %}
+
+    <section>
+        <footer>
+            <p>LinkLink © 2024 </p>
+        </footer>
+    </section>
+
+    <script src="src/home.js" charset="UTF-8"></script>
+</body>
+
+</html>

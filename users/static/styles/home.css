@@ -1,0 +1,9 @@
+@media screen and (max-width: 840px) {
+    .header{
+        max-width: 100%;
+    }
+    .main {
+        grid-template: auto / repeat(auto-fill, minmax(200px, 1fr)) !important;
+        grid-auto-flow: row;
+    }
+}

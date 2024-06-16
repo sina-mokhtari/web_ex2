@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block title %}Login{% endblock %}
+{% load crispy_forms_tags %} {% block content %}
+
+    <section class="main">
+        <h1 class="persian">ورود / ثبت نام</h1>
+        <div class="container">
+            <form class="persian">
+                {% csrf_token %}{{form|crispy}}
+                <label for="username">نام کابری</label><br>
+                <input type="text" name="username"><br>
+                <label for="email">ایمیل</label><br>
+                <input type="text" name="email"><br>
+                <label for="password">رمز عبور</label><br>
+                <input type="password" name="password"><br>
+                <input id="mySubmit" type="submit"  value="ورود / ثبت نام">
+            </form>
+        </div>
+    </section>
+
+    {% endblock %}
