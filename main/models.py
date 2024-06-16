@@ -16,7 +16,9 @@ class Skill(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=128)
     isArchived = models.BooleanField()
-    users = models.ManyToManyField(myUser, related_name='skills')
+    
+    def __str__(self) -> str:
+        return f'{self.title}'
 
 class Education(models.Model):
     id = models.AutoField(primary_key=True)

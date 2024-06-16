@@ -16,3 +16,5 @@ class myUser(AbstractUser):
     birthDate = models.DateField(null=True)
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES, null=True)
     password = models.CharField(max_length=32)
+    
+    skills = models.ManyToManyField('main.Skill', related_name='users')
